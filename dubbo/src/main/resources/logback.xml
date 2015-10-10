@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration scan="true" scanPeriod="10 seconds">
+
+    <timestamp key="byDay" datePattern="yyyyMMdd" />
+
+    <appender name="stdout" class="ch.qos.logback.core.ConsoleAppender">
+        <Encoding>GBK</Encoding>
+        <layout class="ch.qos.logback.classic.PatternLayout">
+            <pattern>%date %-16thread %-5level %-30.30logger{0} - %msg%n</pattern>
+        </layout>
+    </appender>
+
+    <root>
+        <level value="INFO" />
+        <appender-ref ref="stdout"/>
+    </root>
+</configuration>
+
